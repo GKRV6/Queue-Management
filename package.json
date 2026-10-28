@@ -1,0 +1,28 @@
+{
+  "name": "queue-without-standing",
+  "version": "1.0.0",
+  "description": "Smart queue management system for college canteens, photocopy shops, clinics and service centers - a database-focused academic project.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/server.js",
+    "db:reset": "node --disable-warning=ExperimentalWarning src/cli/reset-db.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/*.test.js\"",
+    "test:coverage": "node --disable-warning=ExperimentalWarning --test --experimental-test-coverage \"test/*.test.js\""
+  },
+  "keywords": [
+    "queue",
+    "dbms",
+    "sqlite",
+    "token",
+    "academic-project"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
